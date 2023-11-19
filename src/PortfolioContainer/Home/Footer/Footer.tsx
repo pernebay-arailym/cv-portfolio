@@ -1,11 +1,12 @@
 import "./Footer.css";
+import ShapeBg from "../../../assets/Home/shape-bg.png"
 
 const Footer = () => {
   return (
     <div className="footer-container">
       <div className="footer-parent">
         <img
-          src={require("../../../assets/Home/shape-bg.png?url")}
+          src={ShapeBg}
           alt="not internet connection"
         />
       </div>

@@ -1,4 +1,4 @@
-//import ScrollService from "../../utilities/ScrollService";
+import ScrollService from "../../utilities/ScrollService";
 import "./Footer.css";
 
 export default function Footer() {
@@ -6,7 +6,7 @@ export default function Footer() {
     <div id="ContactMe" className="scroll-container">
       <button
         className="btn-scroll"
-        // onClick={() => ScrollService?.scrollHandler?.scrollToHome()}
+        onClick={() => ScrollService?.scrollHandler?.scrollToHome()}
       >
         {" "}
         <i className="fa fa-arrow-up"></i>

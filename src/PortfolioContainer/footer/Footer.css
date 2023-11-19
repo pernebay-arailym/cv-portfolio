@@ -5,9 +5,10 @@
   margin-right: 20px;
   overflow: hidden;
   flex-direction: column;
-  margin-top: -45px;
+  margin-top: -85px;
   z-index: 100;
   cursor: pointer;
+  border-radius: 10px;
 }
 @media only screen and (min-width: 475px) {
   .scroll-container {

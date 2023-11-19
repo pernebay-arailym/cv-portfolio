@@ -4,22 +4,22 @@ import { toast } from "react-toastify";
 */
 // import load1 from "../../../src/images/load2.gif";
 // import imgBack from "../../../src/images/mailz.jpeg";
-// import Footer from "../../PortfolioContainer/footer/Footer";
+import Footer from "../../PortfolioContainer/footer/Footer";
 import Typewriter from "../../components/Typewriter";
-// import Animations from "../../utilities/Animations";
+import Animations from "../../utilities/Animations";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
-// import ScrollService from "../../utilities/ScrollService";
+import ScrollService from "../../utilities/ScrollService";
 import "./ContactMe.css";
 
 export default function ContactMe(props: any) {
-  /*
+  
   let fadeInScreenHandler = (screen: any) => {
     if (screen.fadeInScreen !== props.id) return;
     Animations.animations.fadeInScreen(props.id);
   };
   const fadeInSubscription =
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
-
+/*
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -72,7 +72,7 @@ export default function ContactMe(props: any) {
       <div className="central-form">
         <div className="col">
           <h2 className="title">
-            <Typewriter texts={["Get In Touch 📧"]} delay={100} />
+            <Typewriter texts={["Get In Touch 📧"]} delay={200} />
           </h2>{" "}
           <a href="https://www.linkedin.com/in/arailympernebay/">
             <i className="fa fa-linkedin-square"></i>
@@ -119,7 +119,7 @@ export default function ContactMe(props: any) {
 
                 */}
       </div>
-      {/*  <Footer /> */}
+      <Footer />
     </div>
   );
 }

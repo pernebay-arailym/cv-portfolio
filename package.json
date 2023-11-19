@@ -10,10 +10,19 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "@types/node": "^20.9.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "vite-plugin-require": "^0.0.3",
+    "vite-svg-loader": "^5.0.1"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-brands-svg-icons": "^6.4.2",
+    "@fortawesome/free-regular-svg-icons": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@types/react": "^18.2.37",
     "@types/react-dom": "^18.2.15",
     "@typescript-eslint/eslint-plugin": "^6.10.0",
@@ -22,6 +31,10 @@
     "eslint": "^8.53.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.4",
+    "owl.carousel": "^2.3.4",
+    "react-owl-carousel": "^2.3.3",
+    "react-toastify": "^9.1.3",
+    "rxjs": "^7.8.1",
     "typescript": "^5.2.2",
     "vite": "^5.0.0"
   }

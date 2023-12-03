@@ -6,12 +6,13 @@ import lady from "../../../src/img/Testimonial/lady.png";
 import man from "../../../src/img/Testimonial/man.png";
 import mike from "../../../src/img/Testimonial/mike.png";
 import shape from "../../../src/img/Testimonial/shape-bg.png";
-import Animations from "../../utilities/Animations";
+// import Animations from "../../utilities/Animations";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
-import ScrollService from "../../utilities/ScrollService";
+// import ScrollService from "../../utilities/ScrollService";
 import "./Testimonial.css";
 
 export default function Testimonial(props: any) {
+  /*
   let fadeInScreenHandler = (screen: any) => {
     if (screen.fadeInScreen !== props.id) return;
     Animations.animations.fadeInScreen(props.id);
@@ -19,7 +20,7 @@ export default function Testimonial(props: any) {
 
   const fadeInSubscription =
     ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
-
+*/
   const options = {
     loop: true,
     margin: 0,

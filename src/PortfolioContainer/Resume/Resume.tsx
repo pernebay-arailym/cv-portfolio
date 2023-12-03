@@ -9,7 +9,7 @@ const Resume = (props: any) => {
   const [selectedBulletIndex, setSelectedBulletIndex] = useState(0);
   const [carousalOffsetStyle, setCarousalOffsetStyle] = useState({ style: {} });
 
-  let fadeInScreenHandler = (screen: any) => {
+  const fadeInScreenHandler = (screen: any) => {
     if (screen.fadeInScreen !== props.id) return;
 
     Animations.animations.fadeInScreen(props.id);
@@ -293,9 +293,9 @@ const Resume = (props: any) => {
   ];
 
   const handleCarousal = (index: number) => {
-    let offsetHeight = 400; // .resume-screen-container  height depended
+    const offsetHeight = 400; // .resume-screen-container  height depended
 
-    let newCarousalOffset = {
+    const newCarousalOffset = {
       style: { transform: "translateY(" + index * offsetHeight * -1 + "px)" },
     };
 
@@ -314,9 +314,10 @@ const Resume = (props: any) => {
       >
         <img
           className="bullet-logo"
-          src={require(`../../assets/Resume/${bullet.logoSrc}`)}
+          src={""} // require(`../../assets/Resume/${bullet.logoSrc}`)}
           alt="B"
         />
+
         <span className="bullet-label">{bullet.label}</span>
       </div>
     ));

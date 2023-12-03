@@ -4,15 +4,13 @@ import ScrollService from "../../utilities/ScrollService";
 import "./AboutMe.css";
 
 export default function AboutMe(props: any) {
-  
-  let fadeInScreenHandler = (screen: any) => {
+  const fadeInScreenHandler = (screen: any) => {
     if (screen.fadeInScreen !== props.id) return;
     Animations.animations.fadeInScreen(props.id);
   };
-  
-  
-  const fadeInSubscription =
-    ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
+
+  // const fadeInSubscription =
+  ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
   const SCREEN_CONSTANTS = {
     description: "",

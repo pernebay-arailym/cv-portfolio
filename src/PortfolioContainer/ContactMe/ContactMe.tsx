@@ -12,14 +12,15 @@ import ScrollService from "../../utilities/ScrollService";
 import "./ContactMe.css";
 
 export default function ContactMe(props: any) {
-  
-  let fadeInScreenHandler = (screen: any) => {
+  const fadeInScreenHandler = (screen: any) => {
     if (screen.fadeInScreen !== props.id) return;
     Animations.animations.fadeInScreen(props.id);
   };
-  const fadeInSubscription =
-    ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
-/*
+
+  // const fadeInSubscription =
+  ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
+
+  /*
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
